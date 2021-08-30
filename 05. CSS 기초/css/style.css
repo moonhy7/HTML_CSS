@@ -1,0 +1,4 @@
+ul {
+    color: blue; /* 목록의 글자색 */
+    list-style-type: square; /* 불릿 형태 : 사각형 */
+}
