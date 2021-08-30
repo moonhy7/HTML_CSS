@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 만들기</title>
+    <style>
+        th {
+            padding: 15px; /* 셀 */
+        }
+    </style>
+</head>
+<body>
+    <!--figure : 제목이나 설명 붙일 대상 지정하는 태그-->
+    <figure>
+        <!--figcaption : 지정된 대상에 제목이나 설명 추가하는 태그-->
+        <figcaption>
+            <!--caption 태그는 중앙에 표시되는데 figcaption은 왼쪽 정렬임-->
+            <p>국내에서 자주 사용되는 <b>모던 브라우저</b></p> 
+        </figcaption>
+    <table border="1">
+        <!--caption : 표 중앙에 표 제목 붙이는 태그-->
+        <tr>
+            <th>브라우저</th>
+            <th>제조업체</th>
+            <th>다운로드</th>
+        </tr>
+        <tr>
+            <th>크롬(Chrome)</th>
+            <td>Google</td>
+            <td>http://www.google.com/chrome/</td>
+        </tr>
+        <tr>
+            <th>파이어폭스(Firefox)</th>
+            <td>Mozilla</td>
+            <td>http://www.Mozilla.org/ko/firefox/</td>
+        </tr>
+        <tr>
+            <th>엣지(Edge)</th>
+            <td>Microsoft</td>
+            <td>http://www.microsoft.com/ko-kr/windows/microsoft-edge/</td>
+        </tr>
+    </table>
+</figure>
+
+</body>
+</html>

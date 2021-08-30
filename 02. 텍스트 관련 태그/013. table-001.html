@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 만들기</title>
+    <style>
+        td {
+            padding: 5px; /*셀 테두리와 내용 사이의 간격(패딩)*/
+        }
+    </style>
+</head>
+<body>
+    <!--zencoding 속성 추가할 때는 []사용-->
+    <!--table[border="1"]>(tr>th+td*2)*2-->
+    <!--table : 표 만드는 태그-->
+    <!--border속성 : 표 테두리 지정 속성-->
+    <table border="1">
+        <!--tr : 표에 행 추가하는 태그-->
+        <tr>
+            <!--th : 행의 제목 입력 태그-->
+            <th> 제목 셀</th>
+            <!--td : 행의 내용 입력 태그-->
+            <td> 1행 2열</td>
+            <td> 1행 3열</td>
+        </tr>
+        <tr>
+            <th> 제목 셀</th>
+            <td> 2행 2열</td>
+            <td> 2행 3열</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 만들기</title>
+    <style>
+        th {
+            padding: 15px; /*셀 테두리와 내용 사이의 간격(패딩)*/
+        }
+    </style>
+</head>
+<body>
+    <!--table[border="1"]>(colgroup>col[style="width:"]*4)+(tr>(th+td)*2)+(tr>(th+td[colspan="3"]))*2-->
+    <table border="1">
+        <!--colgroup : 컬럼을 묶는 태그-->
+        <colgroup>
+            <!--col : 지정된 컬럼에 스타일 적용하는 태그-->
+            <col style="width:100px;">
+            <col style="width:300px;">
+            <col style="width:100px;">
+            <col style="width:300px;">
+        </colgroup>
+        <tr>
+            <th>이름</th>
+            <td></td>
+            <th>연락처</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <th>자기소개</th>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+</body>
+</html>
