@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 폼</title>
+    <style>
+        body {
+            background-color: #fff;
+        }
+        form fieldset {
+            margin-bottom: 25px;
+        }
+        form legend {
+            font-size: 15px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!--form>(fieldset>(legend+p+(label>input)*3))*2-->
+    <form>
+        <fieldset>
+            <legend>신청 과목</legend>
+            <p>이 달에 신청할 과목을 선택하세요 (1과목만 가능)</p>
+            <!--관련있는 그룹의 라디오버튼은 동일한 name으로 관리-->
+            <label><input type="radio" name="subject" value="speaking">회화</label>
+            <!--checked속성 : 화면에 표시될 때 선택돼서 표시될 항목 지정-->
+            <label><input type="radio" name="subject" value="grammer" checked>문법</label>
+            <label><input type="radio" name="subject" value="writing">작문</label>
+        </fieldset>
+        <fieldset>
+            <legend>메일링</legend>
+            <p>메일로 받고 싶은 뉴스 주제를 선택하세요 (중복 선택 가능)</p>
+            <label><input type="checkbox" name="mailling1" value="news">회의 단신</label>
+            <label><input type="checkbox" name="mailling2" value="dialog" checked>5분 회화</label>
+            <label><input type="checkbox" name="mailling3" value="pops">모닝팝스</label>
+        </fieldset>
+    </form>
+</body>
+</html>

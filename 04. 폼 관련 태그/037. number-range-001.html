@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 폼</title>
+    <style>
+        body {
+            background-color: #fff;
+        }
+        form legend {
+            font-size: 15px;
+        }
+        form label.reg {
+            font-size: 14px;
+            width: 150px;
+            float: left;
+        }
+        #member, #stuffs {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!--form>fieldset>(legend+(ul>(li>label+input)*3))-->
+    <form>
+        <fieldset>
+            <legend>등록 정보</legend>
+            <ul>
+                <li>
+                    <label for="member" class="reg">참여인원<small>(최대 10명)</small></label>
+                    <!--value 속성으로 초기 값 1 설정-->
+                    <!-- min 속성으로 최소 값 0 설정-->
+                    <!-- max 속성으로 최대 값 10 설정-->
+                    <!-- step 속성으로 증감 수치 1 설정-->
+                    <input type="number" id="member" value="1" min="0" max="10" step="1">
+                </li>
+                <li>
+                    <label for="stuffs" class="reg">지원물품<small>(1인당 5개)</small></label>
+                    <!--value 속성으로 초기 값 1 설정-->
+                    <!-- min 속성으로 최소 값 0 설정-->
+                    <!-- max 속성으로 최대 값 50 설정-->
+                    <!-- step 속성으로 증감 수치 5 설정-->
+                    <input type="number" id="stuffs" value="5" min="0" max="50" step="5">
+                </li>
+                <li>
+                    <label for="satis" class="reg">희망 단계<small>(하, 중, 상)</small></label>
+                    <!--value 속성으로 초기 값 1 설정-->
+                    <!-- min 속성으로 최소 값 0 설정-->
+                    <!-- max 속성으로 최대 값 3 설정-->
+                    <!-- step 속성 생략으로 기본 값인 1이 증감 수치로 결정-->
+                    <input type="range" id="satis" value="1" min="0" max="3">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

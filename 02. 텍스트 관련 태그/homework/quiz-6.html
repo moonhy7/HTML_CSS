@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1인당 연간 설탕 소비량</title>
+    <title>연간 설탕 소비량</title>
     <style>
-		th {
-            background: #eeeeee; /*thead와 tfoot의 배경 색*/
-        }
-        td {
-            padding: 10px; /*셀 테두리와 내용 사이의 간격(패딩)*/
-        }
+		table {
+			width: 250px;
+		}
     </style>
 </head>
 <body>
+	<!--table[border="1"]>(caption>small)+(colgroup>col*2)+(tr>th+td)*7-->
     <table border="1">
-	<caption>1인당 연간 설탕 소비량 (단위:kg)</caption>
+	<caption>1인당 연간 설탕 소비량&nbsp;<small>(단위:kg)</small></caption>
 	<colgroup>
-		<col style="width: 160px;">
-		<col style="width: 80px;">
+		<col style="background-color: rgb(211, 211, 211);">
+		<col>
 	</colgroup>
         <tr>
 			<th>WHO권장량</th>
@@ -49,7 +47,6 @@
 			<th>세계평균</th>
 			<td>23</td>
         </tr>
-
     </table>
 </body>
 </html>

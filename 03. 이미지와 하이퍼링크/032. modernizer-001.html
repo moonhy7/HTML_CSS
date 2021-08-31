@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modernizr</title>
+    <!--다운받은 Modernizer 라이브러리 링크-->
+    <script src="js/modernizr-custom.js"></script>
+</head>
+<body>
+    <!--h1+img+script-->
+    <h1>SVG 이미지</h1>
+    <img src="images/muffin.svg" alt="">
+    <!--javascript-->
+    <script>
+        // 위에서 만든 img 태그를 변수로 담음
+        var img = document.querySelector("img");
+        // modernizer-customer.js를 이용하여 svg 파일형식을 지원하는 브라우저인지 체크
+        if(!Modernizr.svg) {
+            // svg 파일형식을 지원하지 않을 경우 img 태그에 png 파일 삽입
+            img.setAttribute("src","images/muffin.png")
+            // 확인작업 : 파일 익스플로어로 연결하기, 
+            // F12눌러서 애뮬레이션 윈도우8(svg 지원 안함)로 변경
+            // dom 보면 png가 실행됨을 볼 수 있음
+            // 실제로 이미지 좀 깨져있음
+        }
+    </script>
+</body>
+</html>

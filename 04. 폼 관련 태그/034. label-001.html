@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>label 태그 사용</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        li {
+            margin: 20px;
+        }
+        li label {
+            width: 70px;
+            float: left;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <!--form>ul>(li>(label+input))*2+(li>input)-->
+    <form action="login.php" method="POST">
+        <ul>
+            <li>
+                <!--label : input에 텍스트 붙이는 태그-->
+                <!--for속성 : input의 id속성과 매핑-->
+                <label for="id">아이디</label>
+                <input type="text" id="id">
+            </li>
+            <li>
+                <label for="pw">비밀번호</label>
+                <input type="password" id="pw">
+            </li>
+            <li>
+                <input type="submit" title="로그인" value="로그인">
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
