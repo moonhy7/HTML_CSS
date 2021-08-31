@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 폼</title>
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--h3+(form>(label>input)+input*2)-->
+    <h3>메일링 리스트 등록</h3>
+    <form action="register.php" method="POST">
+        <label>메일 주소 <input type="text"></label>
+        <!--type="submit" : form의 action을 동작시키는 버튼 생성(서버나 다른 페이지로 데이터 전송)-->
+        <input type="submit" value="제출">
+        <!--type="reset" : form을 다시 입력할 수 있도록 초기화하는 버튼 생성-->
+        <input type="reset" value="다시입력">
+    </form>
+</body>
+</html>

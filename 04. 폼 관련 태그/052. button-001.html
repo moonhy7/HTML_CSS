@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 폼</title>
+    <style>
+        .subm {
+            display: block;
+            background-color: #fff;
+            border: 1px solid #dedede;
+            cursor: pointer;
+            padding: 5px 10px 6px 7px;
+        }
+        .subm img {
+            border: 0;
+            padding: 0;
+            width: 16px;
+            height: 16px;
+        }
+        /*hover : 마우스 커서를 대상에 올렸을 때 적용되는 스타일*/
+        .subm:hover {
+            background-color: #e6efc2;
+            border: 1px solid #c6d880;
+            color: #529515;
+        }
+    </style>
+</head>
+<body>
+    <!--form>button.subm>img-->
+    <form action="">
+        <!--type="submit" : <input type="submit"과 동일하게 동작하는 버튼 생성>-->
+        <button type="submit" class="subm">
+            <img src="images/tick.png" alt=""> 전송하기
+        </button>
+    </form>
+
+</body>
+</html>

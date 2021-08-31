@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 폼</title>
+    <style>
+        form fieldset {
+            margin: 10px 0;
+        }
+        form legend {
+            font-size: 18px;
+            color: #0066ff;
+            font-weight: 600;
+        }
+        form label.reg {
+            font-size: 14px;
+            width: 120px;
+            float: left;
+        }
+        form label em {
+            font-size: 15px;
+            color: red;
+            font-weight: 800;
+        }
+        form ul li {
+            list-style: none;
+            margin: 10px 0;
+        }
+        form .goodprogrammers {
+            text-align: left;
+            font-size: 12px;
+            color: blue;
+        }
+        form fieldset.sendform {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--zencoding class속성 추가할 때 .으로 표시-->
+    <!--form>(fieldset>(legend+(label+input)*2+input)+(fieldset>legend+(ul>(li>(label+input))*6))+(fieldset>legend+textarea)+(fieldarea>input*2))-->
+    <form>
+        <fieldset class="login">
+            <legend>로그인</legend>
+            <label for="user_id">아이디 </label>
+            <input type="text" id="user_id" size="10" autofocus>
+            <label for="user_pw">비밀번호 </label>
+            <input type="password" id="user_pw" size="10">
+            <input type="submit" value="로그인">
+            <fieldset>
+                <legend>가입하기</legend>
+                <ul>
+                    <li>
+                        <label class="reg" for="new_id">아이디 <em>*</em></label>
+                        <input type="text" id="new_id" size="20" autocomplete="on" required>
+                    </li>
+                    <li>
+                        <label class="reg" for="new_pw1">비밀번호 <em>*</em></label>
+                        <input type="password" id="new_pw1" size="20" required>
+                    </li>
+                    <li>
+                        <label class="reg" for="new_pw2">비밀번호 확인 <em>*</em></label>
+                        <input type="password" id="new_pw2" size="20" required>
+                    </li>
+                    <li>
+                        <label class="reg" for="user_name">이름 <em>*</em></label>
+                        <input type="text" id="user_name" size="20" required>
+                    </li>
+                    <li>
+                        <label class="reg" for="user_mail">메일 주소 <em>*</em></label>
+                        <input type="email" id="user_mail" size="20" required>
+                    </li>
+                    <li>
+                        <label class="reg" for="user_tel">전화번호 </label>
+                        <input type="tel" id="user_tel" size="20" required>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="goodprogrmmers">
+                <legend>좋은 개발자란</legend>
+                <!--textarea : 여러 줄의 텍스트 입력받는 태그-->
+                <!--cols속성 : textarea의 가로 너비 지정(px단위)-->
+                <!--rows속성 : textarea의 세로 길이 지정(줄단위)-->
+                <textarea name="intro" cols="60" rows="5">
+훌륭한 개발자에는 3가지 요소가 있다고 본다.
+
+개발을 잘하는 개발자.
+팀원과의 의사소통이 잘 되고 협업에 능한 개발자.
+새로운 기술을 배우는데 두려움, 귀찮음 없이 계속 배워가는 개발자.
+이 3가지 요소를 가지고 있는 개발자야말로 성장가능성이 높은 개발자라고 할 수 있다.
+                </textarea>
+            </fieldset>
+            <fieldarea class="sendform">
+                <input type="submit" value="가입하기">
+                <input type="reset" value="다시쓰기">
+            </fieldarea>
+        </fieldset>
+    </form>
+</body>
+</html>

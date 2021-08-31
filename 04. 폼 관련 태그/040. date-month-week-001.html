@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 폼</title>
+</head>
+<body>
+    <!--(form>(h3+(label>input)*2))*3-->
+    <form action="">
+        <h3>조회기간 선택</h3>
+        <!--type="date" : 년, 월, 일 선택하는 input박스 삽입-->
+        <label for=""><input type="date" id="startdate"></label>
+        <label for=""><input type="date" id="enddate"></label>
+    </form>
+    <form action="">
+        <h3>조회기간 선택</h3>
+        <!--type="date" : 년, 월 선택하는 input박스 삽입-->
+        <label for=""><input type="month" id="startmonth"></label>
+        <label for=""><input type="month" id="endmonth"></label>
+    </form>
+    <form action="">
+        <h3>조회기간 선택</h3>
+        <!--type="date" : 년, 몇 번째 주인지 선택하는 input박스 삽입-->
+        <label for=""><input type="week" id="startweek"></label>
+        <label for=""><input type="week" id="endweek"></label>
+    </form>
+</body>
+</html>

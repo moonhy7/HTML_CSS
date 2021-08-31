@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 폼</title>
+</head>
+<body>
+    <!--form>input*2+output-->
+    <!--oninput 이벤트에서 result value값을 num1과 num2의 합으로 설정-->
+    <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+        <input type="number" name="num1" value="0">
+        +<input type="number" name="num2" value="0">
+        =<output name="result" for="num"></output>
+    </form>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 폼</title>
+    <style>
+        body {
+            background-color: #fff;
+        }
+        form fieldset {
+            margin-bottom: 25px;
+        }
+        form legend {
+            font-size: 15px;
+            font-weight: 600;
+        }
+        form label.reg {
+            font-size: 14px;
+            width: 110px;
+            color: #390;
+            text-align: right;
+            margin-right: 10px;
+        }
+        form ul li {
+            list-style: none;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+        #member, #styffs {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!--h1+form>(fieldset>(legend+(ul>li>(label+input)))+(fieldset>legend+(ul>(li>(label+input))*2+(li>(label+(select>option*6)))))+(fieldset>(legend+(ul>(li>(label+input))*3)))+(fieldset>button*2))-->
+    <h1>여름방학 특강 신청</h1>
+    <form>
+        <fieldset id="register">
+            <legend>신청자</legend>
+            <ul>
+                <li>
+                    <label class="reg" for="uname">이름</label>
+                    <!--autofocus속성 : 화면 표출될 때 자동으로 마우스 커서 표시-->
+                    <!--required속성 : 필수입력필드 설정-->
+                    <input type="text" id="uname" autofocus required>
+                </li>
+                <li>
+                    <label class="reg" for="uid">학번</label>
+                    <!--placeholder속성 : 입력하는 내용의 힌트 표시-->
+                    <!--maxlength속성 : 입력할 수 있는 최대 문자 길이-->
+                    <input type="text" id="uid" placeholder="하이픈없이 입력" maxlength="8" required>
+                </li>
+                <li>
+                    <label class="reg" for="uclass">학과</label>
+                    <!--select : 드롭다운 목록 생성-->
+                    <select id="uclass">
+                        <!--option : 드롭다운 목록에 항목 추가-->
+                        <!--선택된 항목의 value값이 submit될 때 서버로 전송-->
+                        <option value="archi">건축공학과</option>
+                        <option value="mechanic">기계공학과</option>
+                        <option value="indust">산업공학과</option>
+                        <option value="elec">전기전자공학과</option>
+                        <!--selected속성 : 화면에 표출될 때 선택될 항목 지정-->
+                        <option value="computer" selected>컴퓨터공학과</option>
+                        <option value="chemical">화학공학과</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
