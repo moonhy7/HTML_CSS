@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>명시도</title>
+    <style>
+        /*태그 선택자가 마지막으로 적용*/
+        h1 {
+            color: blue;
+        }
+        /*아이디 선택자 제일 우선 적용*/
+        #habor {
+            border: 1px solid gray;
+            padding: 10px;
+            color: green;
+        }
+        /*클래스 선택자가 두번째로 적용*/
+        .heading {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--img+h1+ul>li*3-->
+    <img src="images/sydney.png" alt="시드니 오페라 하우스">
+    <h1 id="habor" class="heading">세계 3대 미항</h1>
+    <p>시드니(Syeney), 호주</p>
+    <p>리우데자네이루(Rio de Janeiro), 브라질</p>
+    <p>나폴리(Naples), 이탈리아</p>
+</body>
+</html>
