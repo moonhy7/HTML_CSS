@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원형 그라데이션</title>
+    <style>
+        li {
+            float: left;
+            display: inline;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+        #div1 {
+            background: darkgreen;
+            /*구형 브라우저*/
+            background: -webkit-radial-gradient(30% 40%, circle closest-side, white, yellow, green);
+            background: -moz-radial-gradient(30% 40%, circle closest-side, white, yellow, green);
+            background: -o-radial-gradient(30% 40%, circle closest-side, white, yellow, green);
+            /*모던 브라우저 - 방향 지정시 to 키워드 사용*/
+            background: radial-gradient(circle closest-side at 30% 40%, white, yellow, green);
+        }
+        #div2 {
+            background: darkgreen;
+            /*구형 브라우저*/
+            background: -webkit-radial-gradient(30% 40%, circle closest-corner, white, yellow, green);
+            background: -moz-radial-gradient(30% 40%, circle closest-corner, white, yellow, green);
+            background: -o-radial-gradient(30% 40%, circle closest-corner, white, yellow, green);
+            /*모던 브라우저 - 방향 지정시 to 키워드 사용*/
+            background: radial-gradient(circle closest-corner at 30% 40%, white, yellow, green);
+        }
+        #div3 {
+            background: darkgreen;
+            /*구형 브라우저*/
+            background: -webkit-radial-gradient(30% 40%, circle farthest-side, white, yellow, green);
+            background: -moz-radial-gradient(30% 40%, circle farthest-side, white, yellow, green);
+            background: -o-radial-gradient(30% 40%, circle farthest-side, white, yellow, green);
+            /*모던 브라우저 - 방향 지정시 to 키워드 사용*/
+            background: radial-gradient(circle farthest-side at 30% 40%, white, yellow, green);
+        }
+        #div4 {
+            background: darkgreen;
+            /*구형 브라우저*/
+            background: -webkit-radial-gradient(30% 40%, circle farthest-corner, white, yellow, green);
+            background: -moz-radial-gradient(30% 40%, circle farthest-corner, white, yellow, green);
+            background: -o-radial-gradient(30% 40%, circle farthest-corner, white, yellow, green);
+            /*모던 브라우저 - 방향 지정시 to 키워드 사용*/
+            background: radial-gradient(circle v-corner at 30% 40%, white, yellow, green);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="div1"></li>
+        <li id="div2"></li>
+        <li id="div3"></li>
+        <li id="div4"></li>
+    </ul>
+</body>
+</html>

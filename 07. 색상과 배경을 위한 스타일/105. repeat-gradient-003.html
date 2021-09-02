@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원형 그라데이션 반복</title>
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .grad1 {
+            background: #ccc;
+            background: -webkit-repeating-radial-gradient(circle, white, #ccc 10%); 
+            background: -moz-repeating-radial-gradient(circle, white, #ccc 10%); 
+            background: -o-repeating-radial-gradient(circle, white, #ccc 10%); 
+            background: repeating-radial-gradient(circle, white, #ccc 10%); 
+        }
+        .grad2 {
+            background: #ccc;
+            /*0~20px 노란색 그라데이션 20~40px 빨간색 그라데이션
+            총 40px길이의 그라데이션 효과가 반복됨*/
+            background: -webkit-repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%); 
+            background: -moz-repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%); 
+            background: -o-repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%); 
+            background: repeating-radial-gradient(circle, white, white 10%, #ccc 10%, #ccc 20%); 
+        }
+    </style>
+</head>
+<body>
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+</body>
+</html>
