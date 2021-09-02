@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보더 색상 굵기</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            display: inline-block;
+            margin: 15px;
+            border-style: dashed;
+            border-width: 2px;
+        }
+        .box1 {
+            border-color: red;
+        }
+        .box2 {
+            border-color: blue;
+        }
+        .box3 {
+            border-top-color: black;
+            border-right-color: red;
+            border-bottom-color: blue;
+            border-left-color: green;
+            border-top-width: 1px;
+            border-right-width: 5px;
+            border-bottom-width: 10px;
+            border-left-width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--div.box1*3-->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

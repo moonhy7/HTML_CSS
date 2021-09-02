@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보더 모서리 둥글게 하기</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            display: inline-block;
+        }
+        .round1 {
+            border: 2px solid red;
+            border-radius: 20px;
+        }
+        .round2 {
+            border: 2px solid red;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .round3 {
+            border: 2px solid red;
+            border-radius: 5% 30% 20% 45%;
+        }
+    </style>
+</head>
+<body>
+    <!--div.round*3-->
+    <div class="round1"></div>
+    <div class="round2"></div>
+    <div class="round3"></div>
+</body>
+</html>

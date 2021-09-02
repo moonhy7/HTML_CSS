@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>테두리 스타일</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            display: inline-block;
+            border-width: 5px;
+        }
+        .box1 {
+            position: absolute /*글자 입력시 박스 내려가는 현상 해결하기위해*/
+            border-style: solid; /*테두리 실선*/
+        }
+        .box2 {
+            border-style: dotted; /*테두리 점선*/
+        }
+        .box3 {
+            border-style: dashed; /*테두리 직선점선*/
+        }
+        .box4 {
+            border-style: double; /*테두리 이중선*/
+        }
+        .box5 {
+            border-style: groove; /*테두리 조각선*/
+        }
+        .box6 {
+            border-style: inset; /*테두리 창에 박힌 것 처럼*/
+            border-collapse: collapse; /*groove와 동일*/
+        }.box7 {
+            border-style: outset; /*테두리 창에서 튀어나온 것 처럼*/
+            border-collapse: collapse; /*ridge와 동일*/
+        }
+        .box8 {
+            border-style: ridge; /*테두리 창에서 튀어나온 것 처럼*/
+        }
+    </style>
+</head>
+<body>
+    <!--div.box1*8-->
+    <div class="box1">abcd</div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+</body>
+</html>
