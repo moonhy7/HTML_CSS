@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position absolute</title>
+    <style>
+        #wrap {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ccc;
+        }
+        .box {
+            /*absolute : 부모요소 중 position:relative인 부모요소 기준으로 위치 지정
+                         부모요소 기준으로 절대적인 위치에 배치*/
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: blue;
+        }
+        #crd1 {
+            top: 0;
+            left: 0;
+        }
+        #crd2 {
+            top: 0;
+            right: 0;
+        }
+        #crd3 {
+            bottom: 0;
+            left: 0;
+        }
+        #crd4 {
+            bottom: 0;
+            right: 0;
+        }
+        #crd5 {
+            top: 120px;
+            left: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="box" id="crd1"></div>
+        <div class="box" id="crd2"></div>
+        <div class="box" id="crd3"></div>
+        <div class="box" id="crd4"></div>
+        <div class="box" id="crd5"></div>
+    </div>
+</body>
+</html>

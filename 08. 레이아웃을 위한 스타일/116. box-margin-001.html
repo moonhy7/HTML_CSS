@@ -4,31 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>박스 그림자 효과</title>
+    <title>박스간 간격 조절하기</title>
     <style>
         div {
             width: 200px;
             height: 100px;
-            margin: 15px;
-            display: inline-block;
-            border: 2px solid red;
+            background: skyblue;
         }
         .box1 {
-            box-shadow: 2px -2px 5px 0px black;
+            margin: 30px 50px 30px 50px;
         }
         .box2 {
-            box-shadow: 5px 5px 15px 5px black;
+            margin: 30px 50px;
         }
         .box3 {
-            box-shadow: 2px -2px 5px 0px black;
+            margin: 50px;
+        }
+        .box4 {
+            margin: 30px 5px 10px;
         }
     </style>
 </head>
 <body>
-    <!--div.box*3-->
+    <!--div.box*4-->
     <div class="box1"></div>
     <div class="box2"></div>
     <div class="box3"></div>
+    <div class="box4"></div>
 
 </body>
 </html>
