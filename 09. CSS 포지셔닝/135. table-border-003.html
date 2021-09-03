@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table-border</title>
+    <style>
+        body {
+            font-family: "맑은 고딕", "고딕", "굴림";
+        }
+        .table1 {
+            border: 1px solid black;
+            /*인접한 셀 테두리간의 간격 조절*/
+            border-spacing: 20px;
+            width: 600px;
+            height: 800px;
+        }
+        .table1 td {
+            border: 1px dotted black;
+            padding: 10px;
+            text-align: center;
+            /*빈 셀 표출 여부 결정*/
+            empty-cells: hide;
+        }
+        .cap {
+            /*caption 위치 지정*/
+            caption-side: bottom;
+        }
+    </style>
+</head>
+<body>
+    <!--table.table1>(caption.cap+(tr>td*2)*3)-->
+    <table class="table1">
+        <caption class="cap">프로축구 경기 일정</caption>
+        <tr>
+            <td>울산</td>
+            <td>울산 vs 인천</td>
+        </tr>
+        <tr>
+            <td>부산</td>
+            <td>부산 vs 대전</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

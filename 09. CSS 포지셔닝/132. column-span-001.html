@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>column-span</title>
+    <style>
+        body {
+            font-family: "맑은 고딕", "고딕", "굴림";
+        }
+        section {
+            padding: 20px;
+            width: 600px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .multi {
+            /*단의 개수 3개로 고정 요소의 width가 늘어나면
+            단의 width가 늘어남*/
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;
+            -webkit-column-rule: 2px dotted black;
+            -moz-column-rule: 2px dotted black;
+            column-rule: 2px dotted black;
+            text-align: justify;
+        }
+        .no-col {
+            background: #f0f0f0;
+            margin: 10px 3px;
+            padding: 20px;
+            border-radius: 5px;
+            /*column-span : 단을 나누거나 합치는 속성*/
+            -webkit-column-span: 1;
+            -moz-column-span: 1;
+            column-span: 1;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <h2>토마토 - super food</h2>
+        </header>
+        <div class="multi">
+            <p>토마토는 비타민 A,C가 풍부하여 칼륨과 같은 각종 미네랄은 혈액의 산성도를 낮추는 역할을 해주며 
+                혈압을 내리고 혈관을 튼튼하게 해준다. 토마토에 들어있는 피코펜이라는 성분은 뛰어난 항암 작용을 보이며 
+                잘 알려져 있듯이 블루베리와 함께 대표적인 향산화 음식이기도 하다.</p>
+            <p>토마토는 비타민 A,C가 풍부하여 칼륨과 같은 각종 미네랄은 혈액의 산성도를 낮추는 역할을 해주며 
+                혈압을 내리고 혈관을 튼튼하게 해준다. 토마토에 들어있는 피코펜이라는 성분은 뛰어난 항암 작용을 보이며 
+                잘 알려져 있듯이 블루베리와 함께 대표적인 향산화 음식이기도 하다.</p>
+            <p>토마토는 비타민 A,C가 풍부하여 칼륨과 같은 각종 미네랄은 혈액의 산성도를 낮추는 역할을 해주며 
+                혈압을 내리고 혈관을 튼튼하게 해준다. 토마토에 들어있는 피코펜이라는 성분은 뛰어난 항암 작용을 보이며 
+                잘 알려져 있듯이 블루베리와 함께 대표적인 향산화 음식이기도 하다.</p>
+            <div class="no-col">
+                <p>토마토는 비타민 A,C가 풍부하여 칼륨과 같은 각종 미네랄은 혈액의 산성도를 낮추는 역할을 해주며 
+                혈압을 내리고 혈관을 튼튼하게 해준다. 토마토에 들어있는 피코펜이라는 성분은 뛰어난 항암 작용을 보이며 
+                잘 알려져 있듯이 블루베리와 함께 대표적인 향산화 음식이기도 하다.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

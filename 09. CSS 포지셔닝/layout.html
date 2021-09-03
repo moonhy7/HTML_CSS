@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단 레이아웃</title>
+    <style>
+        div{
+            border:1px solid #333;
+        }
+        #container{
+            width:960px;
+            padding:20px;
+            margin:0 auto;  /*좌우의 가운데 위치*/
+        }
+        #header{
+            padding:20px;
+            margin-bottom:20px;
+        }
+        #sidebar{
+            width:220px;
+            padding:20px;
+            float:right;
+            margin-bottom:20px;
+            background:#eee;
+        }
+        #contents{
+            width:620px;
+            padding:20px;
+            float:left;
+            margin-bottom:20px;
+        }
+        #footer{
+            clear:both;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>블루베리(Blueberry)</h1>
+        </div>
+        <div id="sidebar">
+            <h2>사이드 바</h2>
+            <ul>
+                <li>Wells delight (웰스딜라이트)</li>
+                <li>노스랜드 (Northland)</li>
+                <li>노스블루 (Northblue)</li>
+            </ul>
+        </div>
+        <div id="contents">
+            <h2>본문</h2>
+            <p>육성된 품종이 아닌 야생종이며 일반 블루베리처럼 관목성이 아닌 무려 덩쿨성 수세로(creeping)[32] 크랜베리와 비슷한 면이 있다. 잎의 육질은 질기고 두꺼운 편이며 회양목과 비슷한 정도이고 열매의 크기는 매우 작은 소립에 청색이 아닌 흑자색으로 루벨과 비슷하고 꽃의 크기 또한 매우 작다. </p>
+            <p>성숙기 6월 상순. 당도 13.5% 극조생 품종이며 내한성이 매우 강하다. 크기는 평범하지만 단맛이 강하다보니 오산 공군기지는 블루베리 납품을 노스랜드 품종으로 제한한다.</p>
+        </div>
+        <div id="footer">
+            <h2>푸터</h2>
+            <p>해당 계열 중 열매의 크기와 맛이 우수해 유명하다. 모 농장주 설명으로는 전정 등을 대충 해도 (물이랑 비료만 적당히 주면) 잘 자란다고 한다.</p>
+        </div>
+    </div>
+</body>
+</html>
