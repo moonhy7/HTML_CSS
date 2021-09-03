@@ -16,12 +16,17 @@
       padding:0px;
     }
     nav ul li{
+      float: left; /*내비게이션 항목으로 왼쪽부터 차례대로 배치*/
       font-size:1.5em;
       padding-left:7px;
-      margin-bottom:15px;
+      margin-bottom: 20px;
+      margin-right: 15px; /*내비게이션 항목의 오른쪽 마진을 15px로 지정*/
       border-left-width:5px;
       border-left-color:#990066;
       border-left-style:solid;
+    }
+    section {
+      clear: left; /*float의 영향을 받지 않도록 clear 속성 사용*/
     }
     section article {
       padding-left:10px;

@@ -3,11 +3,27 @@
 <head>
 	<meta charset="utf-8">
 	<title>표 스타일</title>
+  <style>
+    table {
+      border: 1px solid black; /* 표의 테두리 그리기 */
+      border-collapse: collapse; /* 표와 셀의 테두리 합치기 */
+    }
+    table td {
+      border: 1px solid black;  /* 셀의 테두리 그리기 */
+      padding: 10px;
+    }
+    caption {
+      caption-side: bottom; /* 표의 설명 글은 표 아래쪽에 표시*/
+    }
+    .heading {
+      background-color: #eee;
+    }
+  </style>
 </head>
 <body>
   <table border="1">
     <caption>2015 국민 독서실태</caption>
-    <thead>
+    <thead class="heading">
       <tr>
         <th>구분</th>
         <th>성인</th>
@@ -16,17 +32,17 @@
     </thead>
     <tbody>
       <tr>
-        <th>독서율</th>
+        <th class="heading">독서율</th>
         <td>65.3%</td>
         <td>94.9%</td>
       </tr>
       <tr>
-        <th>연평균 독서량</th>
+        <th class="heading">연평균 독서량</th>
         <td>9.1권</td>
         <td>29.8권</td>
       </tr>
       <tr>
-        <th>공공도서관 이용률</th>
+        <th class="heading">공공도서관 이용률</th>
         <td>28.2%</td>
         <td>64.9%</td>
       </tr>      

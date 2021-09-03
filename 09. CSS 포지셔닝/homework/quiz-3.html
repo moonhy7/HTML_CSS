@@ -9,23 +9,31 @@ body{
 }
 #wrapper{
 	width:800px;
-	margin: 0 auto;	
+	margin: 0 auto;
 }
 header {
 	width: 100%;
 	height: 150px;
 	background-color: #F46075;
+	/* 헤더 배경 이미지 추가*/
+	background-image: url("images/nav2.png");
+	background-repeat: no-repeat;
+	background-position: right;
 }
 header nav {
 	width:70%;
 	margin-top: 50px;
+	/* 내비게이션을 아래쪽에 표시하기위해 inline-block 으로 바꿔줌*/
+	display: inline-block;
+	vertical-align: bottom;
 }
 nav ul{
-	list-style-type:none;	
+	list-style-type:none;
 }
 nav ul li{
 	font-weight:bold;
 	margin: 15px;
+	float: left; /*내비게이션 왼쪽부터 차례로 정렬*/
 }
 nav ul li a{
 	color:white;
@@ -44,20 +52,25 @@ p {
 section {
   width:580px;
   padding:5px;
+  float: left; /* 강아지 사진이 아래에서 위로 올라오도록 float 속성 사용*/
 }
 section article{
 	width:250px;
 	height:220px;	
 	margin:5px;
-	padding:10px;	
+	padding:10px;
 	border:1px solid #ccc;
+	float: left; /*article 왼쪽부터 차례로 정렬*/
 }
 aside{
   width:200px;
   height:auto;
   margin-top:80px;
+  float: right;  /*강아지 사진 오른쪽에 정렬*/
+  border: 2px solid green;
 }
 footer{
+	clear: both;  /*footer 부터는 float 속성 해제*/
 	width: 800px;
 	margin-bottom:0;
 	background-color:#333;
