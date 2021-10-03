@@ -4,32 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>줄간격 조절</title>
+    <title>배경 위치 지정</title>
     <style>
         div {
             width: 300px;
             padding: 35px;
-            border: 5px dotted #222;
-            background-color: skyblue;
+            border: 1px solid #eee;
+            background: url('images/bg5.png') no-repeat;
             margin-bottom: 20px;
-            margin-right: 50px;
-            display: block;
-            float: left;
         }
-        .bg1 {
-            background-clip: border-box;
+        #bg1 {
+            background-origin: border-box;
         }
-        .bg2 {
-            background-clip: padding-box;
+        #bg2 {
+            background-origin: padding-box;
         }
-        .bg3 {
-            background-clip: content-box;
+        #bg3 {
+            background-origin: content-box;
         }
+
     </style>
 </head>
 <body>
-    <!--p.align-left*3-->
-    <div class="bg1">
+    <!--p.align-left*4-->
+    <div id="bg1">
         <p>
             Integer elementum massa at nulla placerat varius.
             Suspendisse in libero risus, in interdum massa.
@@ -37,7 +35,7 @@
             Nullam est eros, suscipit sed dictum quis, accumsan a ligula.
         </p>
     </div>
-    <div class="bg2">
+    <div id="bg2">
         <p>
             Integer elementum massa at nulla placerat varius.
             Suspendisse in libero risus, in interdum massa.
@@ -45,7 +43,7 @@
             Nullam est eros, suscipit sed dictum quis, accumsan a ligula.
         </p>
     </div>
-    <div class="bg3">
+    <div id="bg3">
         <p>
             Integer elementum massa at nulla placerat varius.
             Suspendisse in libero risus, in interdum massa.
